@@ -1,23 +1,7 @@
 html {
+  background-color: #D21D10;
   font-size: 10px;
   font-family: 'Open Sans', sans-serif;
-}
-
-
-h1 {
-  font-size: 60px;
-  text-align: center;
-}
-
-p, li {
-  font-size: 16px;  
-  line-height: 2;
-  letter-spacing: 1px;
-}
-
-
-html {
-  background-color: #D21D10;
 }
 
 body {
@@ -29,9 +13,17 @@ body {
 }
 
 h1 {
+  font-size: 60px;
+  text-align: center;
   margin: 0;
   padding: 20px 0;  
   color: #5B6062;
+}
+
+p, li {
+  font-size: 16px;  
+  line-height: 2;
+  letter-spacing: 1px;
 }
 
 img {
