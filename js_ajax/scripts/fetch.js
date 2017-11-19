@@ -7,15 +7,19 @@ verseChoose.onchange = function() {
 };
 
 function updateDisplay(verse) {
+    
     var url = '/data/' + verse + '.txt';
-    var request = new XMLHttpRequest();
-    request.open('GET', url);
-    request.responseType = 'text';
-    request.onload = function() {
-      poemDisplay.textContent = request.response;
-    };
-    request.send();
-};
+    
+    fetch(url)
+        .then(
+            function(response) {
+                response.text()
+                    .then(
+                        function(text) {
+                            poemDisplay.textContent = text;
+                        })
+            })
+}
 
 updateDisplay('vers1');
 
