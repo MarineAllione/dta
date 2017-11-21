@@ -1,31 +1,23 @@
-let user = {
-    name: "John",
-    age: 25
-};
+function User(name, age) {
+    
+    this.name = name;
+    
+    this.age = age;
+    
+    this.sayHi = function() {
+        
+        console.log(this.name + " a " + this.age + "ans.");
+    };
+}
 
-console.log(user.name);
+let user1 = new User("John", 25);
 
-console.log(user.age);
+let user2 = new User("Kate", 32);
 
-user.name = "Peter";
+user1.sayHi();
 
-user.age = 17;
+user2.sayHi();
 
-console.log(user.name + " a " + user.age);
+let user3 = new User("Younes", 19);
 
-user.address = "83 Rue de la République 42100 St-Etienne";
-
-console.log(user.address);
-
-let user2 = {
-    name: "John",
-    age: 25,
-    address: {
-        numero: 83,
-        rue: "Rue de la République",
-        codePostal : 42100,
-        ville : "St-Etienne"
-    }
-};
-
-console.log(user2.address.codePostal);
+user3.sayHi();
