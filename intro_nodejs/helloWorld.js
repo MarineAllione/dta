@@ -6,7 +6,7 @@ function User(name, age) {
     
     this.sayHi = function() {
         
-        console.log(this.name + " a " + this.age + "ans.");
+        return (this.name + " a " + this.age + "ans.");
     };
 }
 
@@ -14,10 +14,21 @@ let user1 = new User("John", 25);
 
 let user2 = new User("Kate", 32);
 
-user1.sayHi();
-
-user2.sayHi();
-
 let user3 = new User("Younes", 19);
 
-user3.sayHi();
+let user4 = new User("Nathan", 21);
+
+let usersSet = new Set();
+
+usersSet.add(user1);
+
+usersSet.add(user2);
+
+usersSet.add(user3);
+
+usersSet.add(user4);
+
+for (let user of usersSet) {
+    
+    console.log(user.sayHi());
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Forms JQuery</title>
+    </head>
+    <body>
+                
+        <form>
+            Nom d'utilisateur
+            <input type="text" id="nom"><br />
+
+            Mot de passe
+            <input type="password" id="pass"><br />
+            
+            Mot de passe (Confirmation)
+            <input type="password" id="passConfirm"><br />
+
+            Sexe 
+            H <input type="radio" id="H" name="sexe" value="H">
+            F <input type="radio" id="F" name="sexe" value="F"><br />
+
+            Fonction
+            <select id="fonction">
+                <option VALUE="etudiant">Etudiant</option>
+                <option VALUE="salarie">Salarié</option>
+                <option VALUE="patron">Patron</option>
+                <option VALUE="enRecherche">En Recherche</option>
+                <option VALUE="retraite">Retraité</option>
+                <option VALUE="autre">Autre</option>
+            </select><br /><br />
+
+            <input type="submit" id="envoyer" value="Envoyer">
+            <input type="reset" id="annuler" value="Annuler">
+        </form> 
+        
+        <script src="scripts/jquery-3.2.1.js"></script>
+        
+        <script src="scripts/form.js"></script>
+        
+    </body>
+</html>
