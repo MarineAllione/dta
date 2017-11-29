@@ -26,7 +26,7 @@ button.onclick = function() {
     
     list.appendChild(listItem);
     
-    listBtn.onclick = function(e) {
+    listBtn.onclick = function() {
       
         list.removeChild(listItem);
     }

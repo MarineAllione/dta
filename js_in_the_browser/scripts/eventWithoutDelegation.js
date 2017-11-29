@@ -1,8 +1,12 @@
+let divDamier = document.getElementById("damier");
+
 for (var i = 1; i <= 16; i++) {
     
     var myDiv = document.createElement('div');
     
-    document.body.appendChild(myDiv);
+    myDiv.className = "elementDuDamier";
+    
+    divDamier.appendChild(myDiv);
 }
 
 function random(number) {
@@ -17,12 +21,32 @@ function bgChange() {
     return rndCol;
 }
 
-var divs = document.querySelectorAll('div');
-
-for (var i = 0; i < divs.length; i++) {
-
-    divs[i].onclick = function(e) {
+function activateChangeColor() {
     
-        e.target.style.backgroundColor = bgChange();
+    var divs = document.getElementsByClassName("elementDuDamier");
+
+    for (var i = 0; i < divs.length; i++) {
+
+        divs[i].onclick = function(e) {
+
+            e.target.style.backgroundColor = bgChange();
+        };
     }
 }
+
+var goButton = document.getElementById("go");
+
+goButton.addEventListener("click", activateChangeColor);
+
+
+var stopButton = document.getElementById("stop");
+
+stopButton.addEventListener("click", function() {
+    
+    var divs = document.getElementsByClassName("elementDuDamier");
+
+    for (var i = 0; i < divs.length; i++) {
+
+        divs[i].onclick = "";
+    }
+});
