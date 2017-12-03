@@ -1,5 +1,9 @@
 let divDamier = document.getElementById("damier");
 
+divDamier.onclick = function() {
+    console.log("Click sur la div englobante !");
+}
+
 for (var i = 1; i <= 16; i++) {
     
     var myDiv = document.createElement('div');
@@ -29,7 +33,11 @@ function activateChangeColor() {
 
         divs[i].onclick = function(e) {
 
+            console.log("Click sur la div inclue !");
+            
             e.target.style.backgroundColor = bgChange();
+            
+            e.stopPropagation();
         };
     }
 }

@@ -1,0 +1,9 @@
+#main {
+    margin: 10px auto;
+    width: 800px;
+    text-align: center;
+}
+
+.no-margin-right {
+    margin-right: 0;
+}

@@ -4,6 +4,11 @@ link.textContent = 'Mozilla Developer Network';
 
 link.href = 'https://developer.mozilla.org';
 
+link.onclick = function(e) {
+    alert("Vous avez cliqué sur le lien!");
+    e.preventDefault();
+};
+
 var sect = document.querySelector('section');
 
 var para = document.createElement('p');

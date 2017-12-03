@@ -28,6 +28,6 @@ div {
     animation-iteration-count: infinite;
 }
 
-#div2:hover {
+#div2 {
     animation: motion 3s alternate infinite;
 }
