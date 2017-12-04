@@ -7,5 +7,5 @@ $(document).ready(function() {
 
 $(function() {
 
-    $("#loadedByJQuery").html("Ce texte est affiché par JQuery");
+    $("#loadedByJQuery").html("<p>Ce texte est affiché par JQuery</p>");
 });
