@@ -6,7 +6,7 @@ $(function() {
         
         // $("tr:even").show("slow");
         
-        // $("tr:even").fadeIn("slow");
+        $("tr:even").fadeIn("slow");
         
         // $("tr:even").slideDown();
     }); 
@@ -17,7 +17,7 @@ $(function() {
         
         // $("tr:even").hide("slow");
         
-        // $("tr:even").fadeOut("slow");
+        $("tr:even").fadeOut("slow");
         
         // $("tr:even").slideUp();
     });

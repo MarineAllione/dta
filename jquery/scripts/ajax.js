@@ -3,15 +3,15 @@ $(function() {
     
     $("#action").click(function() {
                         
-        /* Exemple avec load */
+        /* Exemple avec load 
         
         let param = "l=" + $("#ref").val();
         
         $("#r").load("http://localhost/ajax/proverbes.php", param);
+        */
         
         
-        
-        /* Exemple avec get */
+        /* Exemple avec get  
         
         let param = "l=" + $("#ref").val();
         
@@ -21,10 +21,10 @@ $(function() {
             
             $("#r").html(content);
         });
+        */
         
         
-        
-        /* Exemple avec post */        
+        /* Exemple avec post         
                 
         let url = "http://localhost/ajax/proverbes.php";
         
@@ -38,10 +38,10 @@ $(function() {
                 $("#r").html(content);
             }
         );
+        */
         
         
-        
-        /* Exemple avec ajax */
+        /* Exemple avec ajax */ 
         
         let param = "l=" + $("#ref").val();
         
@@ -65,7 +65,4 @@ $(function() {
         
         
     });
-    
-    
-    
 });

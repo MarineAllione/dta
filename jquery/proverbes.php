@@ -15,13 +15,13 @@ if (isset($_GET["l"])) {
     
     $l=$_GET["l"];
     
-    error_log("in get : " .$l);
+    // error_log("in get : " .$l);
 }
 else if (isset($_POST["l"])) {
     
     $l=$_POST["l"];
     
-    error_log("in post : " .$l);
+    // error_log("in post : " .$l);
 }
 
 if (($l != "") && ($l > 0) && ($l <= count($proverbes))) {

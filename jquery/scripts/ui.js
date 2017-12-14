@@ -3,10 +3,12 @@ $(function() {
     $("#menu").menu();
 
     $("#accordeon").accordion();
+
     
     $("#datepicker").datepicker({
-        dateFormat: "yy-mm-dd"
+        dateFormat: "D, d M yy"
     });
+    
     
     $("#dialog").dialog({ 
         autoOpen: false 

@@ -5,6 +5,7 @@ $(document).ready(function() {
 });
 */
 
+
 $(function() {
 
     $("#loadedByJQuery").html("<p>Ce texte est affiché par JQuery</p>");

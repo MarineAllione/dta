@@ -20,9 +20,9 @@ $(function() {
         $(this).text(textContent.toUpperCase());
     });
     
-    /*
-    $("<li>Quatrième élément de la liste rouge</li>").appendTo($("ul.rouge"));
+    
+    $("<li class=\"pair\">Quatrième élément de la liste rouge</li>").appendTo($("ul.rouge"));
     
     $("<li>Elément 0 de la liste numérotée</li>").prependTo($("ol"));
-    */
+    
 });

@@ -29,9 +29,7 @@ $(function() {
         $("#target").offset(p);
     }
     
-    
     // $("#target").click(deplacerImage);
-    
     
     
     $("#go").on("click", function() {
